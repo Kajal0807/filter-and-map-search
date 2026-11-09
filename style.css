@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 80vw;
+    margin: 1rem auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.btn{
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    color: rgb(35, 189, 250);
+    border: none;
+    cursor: pointer;
+}
+.search-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.search-content input{
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+}
+.search-content i{
+    font-size: 1.1rem;
+}
+.search-content button{
+    background-color: rgb(35, 189, 250);
+    color: white;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+.card{
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #666;
+   
+}
+.card-content span{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+@media (max-width:450px) {
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .search-content{
+    width: 100%;
+    gap: 0.5rem;
+}
+.search-content input{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.search-content i{
+    font-size: 1rem;
+}
+.btn{
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+.card{
+   
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #666;
+   
+}
+.card-content span{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+}
+
